@@ -31,7 +31,7 @@ fi
 #
 #判断是否有消息参数
 #
-if [ -z $2 ]
+if [ -z "$2" ]
 then
 	echo "No message parameter included."
 	echo "Exiting script..."
