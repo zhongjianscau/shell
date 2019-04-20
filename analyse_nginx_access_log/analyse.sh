@@ -24,5 +24,8 @@ case ${column} in
     #统计每一个ip的请求量，逆序输出
     awk -f ip_count.awk $1 | sort -n -k 2 -r
    ;;
+"9")
+    awk -f http_code_count.awk $1 | sort -n -k 2 -r
+    ;;
 esac
 
